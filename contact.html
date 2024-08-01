@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!------------ contact----- -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7388.3541504038485!2d86.66110855715858!3d22.1953758831306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1dbd8e3c132a17%3A0xd8a80f1f9ff93ddd!2sPADMAPUR%20DEULI%20POST%20OFFICE!5e0!3m2!1sen!2sin!4v1717560400612!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Deuli Padmapur</h5>
+              <p>Mayurbhanj,Odisha</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+917855042248</h5>
+              <p>Monday to Saturday 10Am to 6 PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>r2001mohanta@gmail.com</h5>
+              <p>Email Us Your Query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="formhandler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Your Subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae est
+        quo soluta ipsam asperiores perspiciatis laudantium unde odit magnam
+        dignissimos.<br />
+        Aliquam necessitatibus, perferendis hic quasi optio dicta quam, eaque
+        architecto voluptatem vel qui sed dolore officia ipsa ab, repudiandae
+        suscipit?
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"> by Rajesh </i></p>
+    </section>
+
+    <!-- <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Here are the india's Largest University</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt
+            debitis voluptate ex velit maiores tempora, vel alias adipisci
+            consequuntur nobis laboriosam sapiente atque, ratione doloribus
+            voluptatum ab placeat cupiditate.
+          </p>
+
+          <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" alt="" />
+        </div>
+      </div>
+    </section> -->
+    <!-- ----------------------------Js For toggle button----------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
